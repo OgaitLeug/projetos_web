@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .form-container {
+            width: 60%;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="form-container">
+        <h3>Formulário</h3>
+        <form action="https://sys4soft.com/udemy/forms/index.php" method="post">
+           <p>Qual o seu género</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" id="" value="M" checked>
+                    Masculino
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="genero" id="" value="f">
+                    Feminino
+                </label>
+            </div>
+
+            <p>Qual o sistema operacional do seu computador</p>
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema_operacional" id="" value="windows" checked>
+                    Windows
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema_operacional" id="" value="mac">
+                    Mac
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="radio" name="sistema_operacional" id="" value="linux">
+                    Linux
+                </label>
+            </div>
+
+            
+
+
+
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

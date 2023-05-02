@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flex-box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: 20vh;
+            background-color: rgb(133, 69, 69);
+        }
+        h1 {
+            padding: 50px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+        main > article {
+            background-color: purple;
+            height: 400px;
+            flex-grow: 4;
+            padding: 20px;
+        }
+        main > section.left {
+            text-align: center;
+            background-color: lightblue;
+            flex-grow: 2;
+            padding: 20px;
+        }
+        main > section.right {
+            justify-content: center;
+            background-color: lightgreen;
+            flex-grow: 2;
+            padding: 20px;
+        }
+        footer {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HEADER</h1>
+    </header>
+    <main>
+        <section class="left"><h1>LEFT SIDE BAR</h1></section>
+        <article><h1>MAIN CONTENT</h1></article>
+        <section class="right"><h1>RIGHT SIDE BAR</h1></section>
+    </main>
+    <footer>
+        <h1>FOOTER</h1>
+    </footer>
+</body>
+</html>

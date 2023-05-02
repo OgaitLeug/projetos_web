@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Grid2</title>
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+    main {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: [col1-start] 20% [col1-end col2-start] auto [col2-end];
+        grid-template-rows: [row] 10% [row] auto [row] 10%;
+    }
+    div {
+        border: 1px solid black;
+    }
+    .rodape {
+        grid-column-start: col1-start;
+        grid-column-end: col2-end;
+    }
+    .key {
+        display: grid; 
+        grid-template-columns: [col1-start] auto [col1-end col2-start] 50% [col2-end col3-start] auto [col3-end];
+        grid-template-rows: [row-1] 55% [row-2] auto;
+    }
+    #img1{
+        grid-row-start: row-2;
+        margin: 10px;
+    }
+    #img2{
+        grid-row-start: row-2;
+        margin: 10px;
+    }
+    #img3{
+        grid-row-start: row-2;
+        margin: 10px;
+    }
+
+</style>
+<body>
+    <main>
+        <div class="rodape">header</div>
+        <div>aside</div>
+        <div class="key">article
+            <div id="img1">imagem</div>
+            <div id="img2">imagem</div>
+            <div id="img3">imagem</div>
+        </div>
+        <div class="rodape">footer</div>
+    </main>
+</body>
+</html>

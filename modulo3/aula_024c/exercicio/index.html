@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<style>
+    :root {
+        --preto:#595959;
+        --branco:#F2F2F2;
+        --claro:#CDCCD9;
+        --medio:#9994A6;
+        --escuro:#686373
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(to right bottom, #54d2e1, #9F00E9);
+        height: 100vh;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        width: 350px;
+        height: 450px;
+        padding: 20px 30px;
+
+        background-color: white;
+        border-radius: 2px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.401);
+    }
+
+    a#close {
+        font-size: 22px;
+        text-align: right;
+        padding-bottom: 5px;
+        color: var(--preto);
+    }
+
+    h1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    form > div {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: stretch;
+    }
+    
+    form > div > label {
+        font-size: 18px;
+        font-weight: bold;
+        color:  var(--preto);
+    }
+
+    input {
+        padding: 10px;
+        border: 1px solid lightgray;
+    }
+
+    .pw-link {
+        text-decoration: none;
+        color: rgb(133, 169, 247);
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    .log-btn {
+        background: linear-gradient(to right,#54d2e1,#9F00E9);
+        border: none;
+        padding: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        
+    }
+    .log-btn:hover {
+        box-shadow: 0 0 4px 0px black;
+        cursor: pointer;
+    }
+
+    form > p {
+        text-align: center;
+        margin-top: 40px;
+        color: var(--preto);
+    }
+
+    .register {
+        text-align: none;
+        color: rgb(133, 169, 247);
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    
+ 
+</style>
+
+<body>
+    <form action="#" method="post">
+        <a href="#" id="close">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </a>
+        <h1>Login Form</h1>
+
+        <div>
+            <label>Email or Phone</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password">
+        </div>
+
+        <a href="#" class="pw-link">Forgot Password?</a>
+
+        <input type="button" value="Login" class="log-btn">
+
+        <p>Not a member?<a class="register" href="#">Signup now</a></p>
+    </form>
+</body>
+
+</html>

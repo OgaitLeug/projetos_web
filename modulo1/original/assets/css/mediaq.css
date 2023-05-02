@@ -1,0 +1,17 @@
+@media screen and (max-width: 770px) {
+    .container-navegacao {
+        padding: 10px;
+        background-color: #06345d;
+    }
+    .container-navegacao a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /*--------------Página serviços------------------*/
+
+    .container-servicos article {
+        width: 80%;
+    }
+
+}

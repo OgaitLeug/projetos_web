@@ -1,0 +1,24 @@
+/* folha de estilos de CSS3 */
+.container {
+    display: flex;
+}
+
+.container div{
+    width: 400px;
+    height: 600px;
+    box-shadow: inset 0 0 1px black;
+}
+
+.espaco-1 {
+    /* background: linear-gradient(45deg, blue, green); */
+    background: linear-gradient(to left top, blue, yellow, green);
+}
+
+.espaco-2 {
+    /* background: linear-gradient(red 0 30%, yellow 70% 100%); */
+    background: linear-gradient(red 0, orange 25%, yellow 50%, green 75%, blue 100%);
+}
+
+.espaco-3 {
+    background: linear-gradient(rgb(29, 55, 63), rgb(82, 125, 138));
+}
