@@ -39,11 +39,11 @@
 // arrow functions com parâmetros
 // ----------------------------
 
-// let funcao = (a,b) => {
-//     return a + b
-// }
+let funcao = (a,b) => {
+    return a + b
+}
 
-// console.log(funcao(10,20))
+console.log(funcao(10,20))
 
 // ou ainda mais simples...
 
