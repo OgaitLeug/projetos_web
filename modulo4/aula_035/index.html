@@ -6,12 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h1 {
+        background-color: gray;
+        padding: 20px;
+    }
+</style>
 <body>
-    
-    <h1>Texto do título desta página</h1>
-    
-    <button>Alterar texto</button>
-    
+
+    <h1 
+        onclick="alert('mensagem aleatória')"
+        oncontextmenu="alert('oncontextmenu == botao direito')"
+        onmouseenter="console.log('cursor entrou em h1')"
+        onmousemove="console.log('cursor moveu-se em h1')"
+        onmouseleave="console.log('cursor saiu de h1')"
+
+    >Texto do título desta página</h1>
+
+    <button id="1" onclick="alterar_texto(event)">Alterar texto</button>
+    <button id="2" onclick="alterar_texto(event)">Alterar texto</button>
+    <button id="3" onclick="alterar_texto(event)">Alterar texto</button>
+    <button id="4" onclick="alterar_texto(event)">Alterar texto</button>
+
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

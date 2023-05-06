@@ -2,7 +2,7 @@
 
 let container = document.querySelector('section')
 
-// // ver o valor de class na consola
+// ver o valor de class na consola
 // console.log(container.className)
 
 // // alterar o valor de class
@@ -10,7 +10,7 @@ let container = document.querySelector('section')
 // console.log(container.className)
 
 // // adicionar mais uma classe
-// container.className += " container-light"
+// container.className += "container-light"
 
 // // Não é muito prático. Vamos ver classList
 // console.log(container.classList)
@@ -34,7 +34,7 @@ let container = document.querySelector('section')
 // // -----------------------------------
 // // ALTERNAR CLASSES
 // // -----------------------------------
-// container.classList.toggle('container')
+// container.classList.toggle('container')  <-- ligar o desligar a classe..
 
 // // -----------------------------------
 // // verificar se uma classe existe no elemento
