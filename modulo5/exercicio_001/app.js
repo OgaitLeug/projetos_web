@@ -8,3 +8,27 @@ Enunciado: CONTADOR
     um dos botões, o utilizador irá aumentar ou diminuir o valor em uma unidade.
 
 ---------------------------------------------------------------------------- */
+
+
+let valor = document.getElementById('valor').textContent
+
+const h1_valor = document.querySelector("#valor");
+
+document.querySelector("#btn_decremento").addEventListener('click', () => {
+    diminuir()
+})
+document.querySelector("#btn_incremento").addEventListener('click', () => {
+    aumentar()
+})
+
+
+
+function aumentar() {
+    h1_valor.textContent = ++valor;
+}
+
+function diminuir() {
+    h1_valor.textContent = --valor;
+}
+
+
