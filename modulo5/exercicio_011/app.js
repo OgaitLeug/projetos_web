@@ -8,3 +8,15 @@ Enunciado:
     vamos apresentar o símbolo 'O'.
 ---------------------------------------------------------------------------- */
 
+let filled_images = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+let symbol = "x";
+document.querySelectorAll('[id^="img').forEach(img => {
+    img.addEventListener('click', img => {
+        let index = img.target.substring(3);
+        putsimnol(index);
+    })
+})
+
+function putsimnol(index){
+    if
+}
