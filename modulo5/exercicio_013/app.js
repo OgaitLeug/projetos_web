@@ -7,3 +7,16 @@ Enunciado:
     sequencial e depois de inserido, o input deve ser limpo e receber o focus para
     nova inserção.
 ---------------------------------------------------------------------------- */
+
+let num = 1;
+
+document.querySelector(".btn").addEventListener('click', () =>{
+    let texto = document.querySelector("#text_post");
+    if(texto.value !== ''){
+        let p = document.createElement('p');
+        p.textContent =  `${num++}. ${texto.value}`
+        document.querySelector('#posts').appendChild(p);
+        texto.value = "";
+        texto.focus();
+    }
+})

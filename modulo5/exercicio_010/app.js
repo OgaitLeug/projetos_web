@@ -11,7 +11,9 @@ const caixas = document.querySelectorAll('[id^="box"]');
 
 caixas.forEach(box => {
     box.addEventListener('click', (box) => {
+        // todas a vermelho
         allred();
+        // amarelo ao click
         box.target.style.backgroundColor = "yellow";
     })
 })

@@ -9,3 +9,18 @@ Enunciado:
     Não são permitidas as palavras "teste", "obrigado" e "hoje"
 ---------------------------------------------------------------------------- */
 
+texto = document.querySelector('#text_post')
+
+document.querySelector('.btn').addEventListener('click',() =>{
+    switch (texto){
+        case (texto.value == "teste"):
+        case "obrigado":
+        case "hoje":
+            window.alert('palavra proibida"')
+        break
+    }
+})
+
+
+// let p = document.createElement('p');
+//         p.textContent =  `${num++}. ${texto.value}`;
